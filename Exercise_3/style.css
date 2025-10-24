@@ -172,9 +172,6 @@ footer {
 
 /* ===== THIẾT KẾ RESPONSIVE ===== */
 
-/* Khi màn hình có chiều rộng tối đa 600px 
-  (thường là điện thoại) 
-*/
 @media (max-width: 600px) {
     nav ul {
         flex-direction: column; /* Chuyển menu thành dọc */

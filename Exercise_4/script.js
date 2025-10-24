@@ -35,29 +35,29 @@ document.addEventListener("DOMContentLoaded", function() {
         // Lấy phần tử để hiển thị lỗi
         const errorMsg = document.getElementById('errorMsg'); 
 
-        // 3. Validate (Kiểm tra) dữ liệu [cite: 157]
+        // 3. Validate (Kiểm tra) dữ liệu
         
-        // Kiểm tra tên rỗng [cite: 158]
+        // Kiểm tra tên rỗng
         if (name === "" || price === "") {
             errorMsg.textContent = "Lỗi: Tên sản phẩm và Giá không được để trống!";
             return; // Dừng hàm, không thêm sản phẩm
         }
         
-        // Kiểm tra giá có phải là số và lớn hơn 0 không [cite: 159]
+        // Kiểm tra giá có phải là số và lớn hơn 0 không
         if (isNaN(price) || Number(price) <= 0) {
             errorMsg.textContent = "Lỗi: Giá phải là một số dương hợp lệ!";
             return; // Dừng hàm
         }
 
         // 4. Nếu hợp lệ:
-        // Xóa thông báo lỗi (nếu có) [cite: 198]
+        // Xóa thông báo lỗi (nếu có)
         errorMsg.textContent = "";
 
-        // 5. Tạo phần tử HTML mới cho sản phẩm [cite: 162]
+        // 5. Tạo phần tử HTML mới cho sản phẩm
         const newProduct = document.createElement('article');
-        newProduct.className = 'product-item'; // [cite: 202]
+        newProduct.className = 'product-item';
 
-        // Dùng template string (innerHTML) để tạo nội dung bên trong [cite: 209]
+        // Dùng template string (innerHTML) để tạo nội dung bên trong
         newProduct.innerHTML = `
             <h3 class="product-name">${name}</h3>
             <p class="product-desc">${desc || 'Không có mô tả.'}</p>
@@ -65,13 +65,13 @@ document.addEventListener("DOMContentLoaded", function() {
         `;
         // (Chúng ta dùng toLocaleString để format giá tiền cho đẹp, ví dụ: 150000 -> 150.000)
 
-        // 6. Thêm sản phẩm mới vào ĐẦU danh sách [cite: 213]
+        // 6. Thêm sản phẩm mới vào ĐẦU danh sách
         const productListContainer = document.getElementById('product-items-container');
         productListContainer.prepend(newProduct);
 
-        // 7. Dọn dẹp: Reset form và ẩn đi [cite: 163]
-        addProductForm.reset(); // Xóa nội dung các ô input [cite: 225]
-        addProductForm.classList.add('hidden'); // Ẩn form [cite: 227]
+        // 7. Dọn dẹp: Reset form và ẩn đi
+        addProductForm.reset(); // Xóa nội dung các ô input
+        addProductForm.classList.add('hidden'); // Ẩn form
     });
     // --- PHẦN 2: XỬ LÝ TÌM KIẾM (LỌC) SẢN PHẨM ---
 

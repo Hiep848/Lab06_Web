@@ -79,9 +79,6 @@ section h2 {
 
 /* ===== DANH SÁCH SẢN PHẨM (PRODUCT LIST) ===== */
 
-/* Quan trọng: Áp dụng flex cho thẻ <div> bọc các sản phẩm,
-  chứ không phải cho #product-list
-*/
 #product-list > div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
@@ -172,9 +169,6 @@ footer {
 
 /* ===== THIẾT KẾ RESPONSIVE ===== */
 
-/* Khi màn hình có chiều rộng tối đa 600px 
-  (thường là điện thoại) 
-*/
 @media (max-width: 600px) {
     nav ul {
         flex-direction: column; /* Chuyển menu thành dọc */
@@ -237,7 +231,7 @@ footer {
     background: #218838;
 }
 
-/* Style cho Form Thêm Sản Phẩm Mới (dùng lại style của form liên hệ) */
+/* Style cho Form Thêm Sản Phẩm Mới */
 #addProductForm {
     max-width: 600px;
     margin: 20px auto;
