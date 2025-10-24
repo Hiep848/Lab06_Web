@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+    <!-- Khai báo bộ mã ký tự -->
     <meta charset="UTF-8">
+
+    <!-- Đảm bảo hỗ trợ thiết kế responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tiêu đề hiển thị trên tab trình duyệt -->
     <title>Cửa hàng Sách Hiệp Hóm Hỉnh</title>
+
+    <!-- Liên kết tới file CSS bên ngoài -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- ===== PHẦN ĐẦU TRANG (HEADER) ===== -->
     <header>
+        <!-- Tiêu đề chính của trang -->
         <h1>Cửa hàng Sách Hiệp Hóm Hỉnh</h1>
+
+        <!-- Thanh điều hướng -->
         <nav>
             <ul>
+                <!-- Các liên kết chính của website -->
                 <li><a href="#">Trang chủ</a></li>
                 <li><a href="#">Sản phẩm</a></li>
                 <li><a href="#">Liên hệ</a></li>
@@ -18,54 +31,83 @@
         </nav>
     </header>
 
+    <!-- ===== NỘI DUNG CHÍNH (MAIN CONTENT) ===== -->
     <main>
+        <!-- Giới thiệu cửa hàng -->
         <section id="gioi-thieu">
             <h2>Chào mừng đến với Cửa hàng Sách Hiệp Hóm Hỉnh</h2>
             <p>Nơi khám phá tri thức và những câu chuyện kỳ thú.</p>
         </section>
 
+        <!-- Danh sách sản phẩm nổi bật -->
         <section id="product-list">
             <h2>Sản phẩm nổi bật</h2>
-            
+            <div>
+            <!-- Sản phẩm 1 -->
             <article class="product-item">
-                <h3 class="product-name">Sách Lập trình Web</h3>
-                <p class="product-desc">Mô tả ngắn về sách lập trình web.</p>
-                <p class="product-price">Giá: 150.000 VNĐ</p>
+            <h3 class="product-name">Sách Lập trình Web</h3>
+            <p class="product-desc">Hướng dẫn chi tiết về HTML, CSS và JavaScript.</p>
+            <p class="product-price">Giá: 150.000 VNĐ</p>
+            </article>
+
+            <!-- Sản phẩm 2 -->
+            <article class="product-item">
+            <h3 class="product-name">Sách Thuật toán</h3>
+            <p class="product-desc">Giới thiệu các thuật toán cơ bản và nâng cao trong lập trình.</p>
+            <p class="product-price">Giá: 180.000 VNĐ</p>
+            </article>
+
+            <!-- Sản phẩm 3 -->
+            <article class="product-item">
+            <h3 class="product-name">Sách Trí tuệ Nhân tạo</h3>
+            <p class="product-desc">Khám phá thế giới AI và Machine Learning với các ví dụ thực tế.</p>
+            <p class="product-price">Giá: 220.000 VNĐ</p>
+            </article>
+
+            <!-- Sản phẩm 4 -->
+            <article class="product-item">
+            <h3 class="product-name">Sách An toàn thông tin</h3>
+            <p class="product-desc">Bảo mật mạng và các phương pháp phòng chống tấn công.</p>
+            <p class="product-price">Giá: 300.000 VNĐ</p>
             </article>
 
             <article class="product-item">
-                <h3 class="product-name">Sách Thuật toán</h3>
-                <p class="product-desc">Mô tả ngắn về sách thuật toán.</p>
-                <p class="product-price">Giá: 180.000 VNĐ</p>
+            <h3 class="product-name">Sách Lập trình Mobile</h3>
+            <p class="product-desc">Kiến thức toàn diện về phát triển ứng dụng di động.</p>
+            <p class="product-price">Giá: 150.000 VNĐ</p>
             </article>
-
-            <article class="product-item">
-                <h3 class="product-name">Sách Trí tuệ Nhân tạo</h3>
-                <p class="product-desc">Mô tả ngắn về sách AI.</p>
-                <p class="product-price">Giá: 220.000 VNĐ</p>
-            </article>
+            </div>
         </section>
 
+        <!-- Biểu mẫu liên hệ -->
         <section id="contact-form-section">
             <h2>Liên hệ với chúng tôi</h2>
             <form id="contactForm">
+                <!-- Ô nhập họ tên -->
                 <div>
                     <label for="name">Họ tên:</label>
                     <input type="text" id="name" name="name" required>
                 </div>
+
+                <!-- Ô nhập email -->
                 <div>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
                 </div>
+
+                <!-- Ô nhập nội dung -->
                 <div>
                     <label for="message">Nội dung:</label>
                     <textarea id="message" name="message" rows="4"></textarea>
                 </div>
+
+                <!-- Nút gửi -->
                 <button type="submit">Gửi</button>
             </form>
         </section>
     </main>
 
+    <!-- ===== CHÂN TRANG (FOOTER) ===== -->
     <footer>
         <p>&copy; 2025 Cửa hàng Sách Hiệp Hóm Hỉnh. Bảo lưu mọi quyền.</p>
     </footer>
