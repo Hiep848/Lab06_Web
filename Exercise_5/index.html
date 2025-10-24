@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cửa hàng Sách Hiệp Hóm Hỉnh</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Cửa hàng Sách Hiệp Hóm Hỉnh</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="gioi-thieu">
+            <h2>Chào mừng đến với Cửa hàng Sách Hiệp Hóm Hỉnh</h2>
+            <p>Nơi khám phá tri thức và những câu chuyện kỳ thú.</p>
+        </section>
+
+        <section id="add-product-controls">
+            <button id="addProductBtn">Thêm sản phẩm mới</button>
+
+            <form id="addProductForm" class="hidden">
+                <h3>Thêm sản phẩm mới</h3>
+
+                <div>
+                    <label for="newName">Tên sản phẩm:</label>
+                    <input type="text" id="newName" required>
+                </div>
+
+                <div>
+                    <label for="newPrice">Giá (VNĐ):</label>
+                    <input type="number" id="newPrice" required>
+                </div>
+
+                <div>
+                    <label for="newDesc">Mô tả:</label>
+                    <textarea id="newDesc" rows="3"></textarea>
+                </div>
+
+                <p id="errorMsg" style="color:red;"></p> 
+
+                <div>
+                    <button type="submit">Thêm</button>
+                    <button type="button" id="cancelBtn">Hủy</button> 
+                </div>
+            </form>
+        </section>
+        
+        <section id="product-list">
+            <h2>Sản phẩm nổi bật</h2>
+            <div id="search-bar">
+                <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm theo tên...">
+            </div>
+            
+            <div id="product-items-container"></div>
+
+            </section>
+
+        <section id="contact-form-section">
+            <h2>Liên hệ với chúng tôi</h2>
+            <form id="contactForm">
+                <div>
+                    <label for="name">Họ tên:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="message">Nội dung:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+
+                <button type="submit">Gửi</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Cửa hàng Sách Hiệp Hóm Hỉnh. Bảo lưu mọi quyền.</p>
+    </footer>
+
+</body>
+</html>
